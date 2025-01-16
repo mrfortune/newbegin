@@ -18,7 +18,7 @@ import { useScroll } from "motion/react"
 export default function Home() {
   return (
     <div>
-      <section className={`${styles.bentoContainer} grid gap-4  max-w-screen-2xl mt-20 mx-auto`}>
+      <section className={`${styles.bentoContainer} grid gap-4  max-w-screen-2xl mt-20 mb-20 mx-auto`}>
         <div className={`${styles.itemOne} rounded-2xl p-4 shadow-gray-500/50 shadow-sm bg-gradient-to-b from-blue-900/25 via-blue-950/25 to-blackrounded-2xl text-white flex justify-center items-center`}>
            
           <div className={`${styles.homePageHero} `}>
@@ -95,30 +95,7 @@ export default function Home() {
                         </li>
                     </ul>                
                 </div>
- {/* <div className={`${styles.scrollContainer}`}>
- <div className={`${styles.scrollContent} flex`}>
-  <div className={`${styles.primary}`}>
-     <Image
-            src="/images/workcbanner.png"
-            alt="Projects Worked On"
-            width={4000}
-            height={80}
-          />
-  </div>
-         
-          <div className={`${styles.primary} ${styles.secondary}` }>
-            <Image
-            src="/images/workcbanner.png"
-            alt="Projects Worked On"
-            width={4000}
-            height={80}
-          /> 
-          </div>
-        </div>
- </div>
-        */}
-       
-       
+  
         </div>
         
         <div className={`${styles.itemEight}  shadow-gray-500/50 bg-gradient-to-b from-blue-900/25 via-blue-950/25 to-black shadow-sm rounded-2xl text-white p-4`}><FaTools />

@@ -40,6 +40,9 @@
   grid-column-end:10; 
   grid-row:4/5;
 }
+.logo{
+  width:100px;
+}
 .bentoContainer .itemEight{
   grid-column-start:1;
   grid-column-end:5; 
