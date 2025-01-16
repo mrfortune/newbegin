@@ -26,26 +26,30 @@
   grid-row:3/5;
 }
 .bentoContainer .itemFive{
-  grid-column-start:4;
-  grid-column-end:9; 
-  grid-row:3/5;
-}
-.bentoContainer .itemSix{
-  grid-column-start:6;
-  grid-column-end:9; 
-  grid-row:2/3;
-}
-.bentoContainer .itemSeven{
-  grid-column-start:1;
-  grid-column-end:13; 
-  grid-row:5/6;
-}
-.bentoContainer .itemEight{
-  grid-column-start:9;
+  grid-column-start:10;
   grid-column-end:13; 
   grid-row:4/5;
 }
-
+.bentoContainer .itemSix{
+  grid-column-start:10;
+  grid-column-end:13; 
+  grid-row:2/4;
+}
+.bentoContainer .itemSeven{
+  grid-column-start:4;
+  grid-column-end:10; 
+  grid-row:4/5;
+}
+.bentoContainer .itemEight{
+  grid-column-start:1;
+  grid-column-end:5; 
+  grid-row:5/6;
+}
+.bentoContainer .itemNine{
+  grid-column-start:5;
+  grid-column-end:13; 
+  grid-row:5/6;
+}
 .bentoContainer .itemSeven .scrollContainer {
   display: flex;
   overflow: hidden;
