@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #000;
   --foreground: #171717;
 }
 
@@ -13,9 +13,74 @@
     --foreground: #ededed;
   }
 }
-
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+#root, #__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-size-base: clamp(1rem, 1vw + 1rem, 1.5rem);
+  --font-size-sm: clamp(.8rem, 2vw + 1rem, 1rem) ;
+  --font-size-m: clamp(1rem, 2vw + 1rem, 1.5rem) ;
+  --font-size-lg: clamp(1.25rem, 2vw + 1rem, 2rem);
+  --font-size-xl: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+  --font-size-xxl: clamp(2rem, 4vw + 1rem, 3rem);
+  --font-size-nav-footer: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* Adjusted for navigation and footer */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+}
+
+#root, #__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+h4 {
+  font-size: var(--font-size-m);
+}
+h5{
+  font-size: var(--font-size-sm);
+  text-transform:uppercase;
+  line-height:1;
+}
+code, pre {
+  font-family: var(--font-inter);
+}
+nav, footer {
+  font-size: var(--font-size-nav-footer);
 }
